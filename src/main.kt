@@ -1,4 +1,10 @@
+import com.rsk.Person
 
 fun main(args: Array<String>) {
-        print("hello, world")
+    println("hello, world")
+
+    val kevin = Person("Kevin")
+
+
+    println("Name is ${kevin.Name}")
     }
