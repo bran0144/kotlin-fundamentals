@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
 
     val kevin = Person("Kevin")
 
-
     println("Name is ${kevin.Name}")
+
+    kevin.display()
     }
