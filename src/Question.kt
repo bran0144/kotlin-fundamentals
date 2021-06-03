@@ -6,11 +6,12 @@ fun main(args:Array<String>) {
 
     println("The answer to the question ${q.Question} is ${q.Answer}")
 
-    if(q.Answer == q.CorrectAnswer) {
-        println("You were correct")
+    var message = if(q.Answer == q.CorrectAnswer) {
+        "You were correct"
     } else{
-        println("Try again")
+        "Try again"
     }
+    println(message)
 }
 
 class Question {
