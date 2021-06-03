@@ -1,6 +1,8 @@
 fun main(args:Array<String>) {
     val q = Question()
 
+    q.Answer = null
+    if(q.Answer != null) {}
     q.Answer = "42"
     q.display()
 
@@ -15,7 +17,7 @@ fun main(args:Array<String>) {
 }
 
 class Question {
-    var Answer:String = ""
+    var Answer:String? = null
     val CorrectAnswer = "42"
     val Question: String = "What is the answer to life, the universe, and everything?"
 
