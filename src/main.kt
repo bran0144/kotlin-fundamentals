@@ -7,9 +7,11 @@ fun main(args: Array<String>) {
 
     println("Name is ${kevin.Name}")
 
+    kevin.display()
+
     kevin.displayWithLambda(::printName)
 
-    kevin.display()
+
 }
 fun printName(name: String) {
         println(name)
