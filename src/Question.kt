@@ -1,14 +1,14 @@
 fun main(args:Array<String>) {
-    val q = Question()
+    val q:Question? = Question()
 
-    q.Answer = null
-    if(q.Answer != null) {}
-    q.Answer = "42"
-    q.display()
+    q?.Answer = null
+    if(q?.Answer != null) {}
+    q?.Answer = "42"
+    q?.display()
 
-    println("The answer to the question ${q.Question} is ${q.Answer}")
+    println("The answer to the question ${q?.Question} is ${q?.Answer}")
 
-    var message = if(q.Answer == q.CorrectAnswer) {
+    var message = if(q?.Answer == q?.CorrectAnswer) {
         "You were correct"
     } else{
         "Try again"
