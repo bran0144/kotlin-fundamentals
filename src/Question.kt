@@ -3,6 +3,8 @@ fun main(args:Array<String>) {
 
     q.Answer = "42"
     q.display()
+
+    println("The answer to the question ${q.Question} is ${q.Answer}")
 }
 
 class Question {
@@ -10,6 +12,6 @@ class Question {
     val Question: String = "What is the answer to life, the universe, and everything?"
 
     fun display() {
-        println("You said " + Answer)
+        println("You said $Answer")
     }
 }
