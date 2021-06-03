@@ -14,6 +14,7 @@ fun main(args:Array<String>) {
         "Try again"
     }
     println(message)
+    q?.printResult()
 }
 
 class Question {
@@ -23,5 +24,11 @@ class Question {
 
     fun display() {
         println("You said $Answer")
+    }
+    fun printResult() {
+        when (Answer) {
+            CorrectAnswer -> print("You were correct")
+            else -> print("Try again?")
+        }
     }
 }
