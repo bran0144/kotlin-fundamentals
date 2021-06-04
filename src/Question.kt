@@ -2,7 +2,7 @@ import java.lang.NumberFormatException
 
 fun main(args:Array<String>) {
 
-    for (i in 1..10) {
+    for (i in 10 downTo 1 step 2)  {
         println(i)
     }
 //    val q:Question = Question()
