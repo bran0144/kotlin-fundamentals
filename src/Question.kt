@@ -3,7 +3,7 @@ import java.util.*
 
 fun main(args:Array<String>) {
 
-//    var numbers = listOf(1, 2, 3, 4, 5)
+    var numbers = listOf(1, 2, 3, 4, 5)
 //    for (i in numbers)  {
 //        println(i)
 //    }
@@ -16,6 +16,9 @@ fun main(args:Array<String>) {
 
     for((name, age) in ages){
         println("$name is $age")
+    }
+    for((index, element) in numbers.withIndex()) {
+        println("$element at $index")
     }
 //    val q:Question = Question()
 //
