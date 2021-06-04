@@ -3,8 +3,9 @@
 package com.rsk
 
 fun main(args: Array<String>){
-    log("Hello")
+    log("Hello", 2)
 }
+@JvmOverloads
 fun log(message: String, loglevel: Int = 1) {
-    println(message)
+    println(message + loglevel)
 }
