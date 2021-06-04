@@ -2,7 +2,8 @@ import java.lang.NumberFormatException
 
 fun main(args:Array<String>) {
 
-    for (i in 1 until 10)  {
+    var numbers = listOf(1, 2, 3, 4, 5)
+    for (i in numbers)  {
         println(i)
     }
 //    val q:Question = Question()
