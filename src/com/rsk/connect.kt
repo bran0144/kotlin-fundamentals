@@ -3,7 +3,7 @@
 package com.rsk
 
 fun main(args: Array<String>){
-    log("Hello", 2)
+    log(message="Hello", loglevel=2)
 }
 @JvmOverloads
 fun log(message: String, loglevel: Int = 1) {
