@@ -1,10 +1,21 @@
 import java.lang.NumberFormatException
+import java.util.*
 
 fun main(args:Array<String>) {
 
-    var numbers = listOf(1, 2, 3, 4, 5)
-    for (i in numbers)  {
-        println(i)
+//    var numbers = listOf(1, 2, 3, 4, 5)
+//    for (i in numbers)  {
+//        println(i)
+//    }
+
+    var ages = TreeMap<String, Int>()
+    ages["Sam"] = 24
+    ages["Stewart"] = 40
+    ages["Sally"] = 33
+    ages["Sue"] = 55
+
+    for((name, age) in ages){
+        println("$name is $age")
     }
 //    val q:Question = Question()
 //
