@@ -1,12 +1,25 @@
+import java.io.FileReader
+import java.io.IOException
 import java.lang.NumberFormatException
 import java.util.*
 
 fun main(args:Array<String>) {
 
-    var numbers = listOf(1, 2, 3, 4, 5)
+    var reader = FileReader("filename")
+
+    try {
+        reader.read()
+    }catch(e : IOException){
+    }finally {
+
+    }
+
 //    for (i in numbers)  {
 //        println(i)
 //    }
+}
+fun ranges(){
+    var numbers = listOf(1, 2, 3, 4, 5)
 
     var ages = TreeMap<String, Int>()
     ages["Sam"] = 24
@@ -20,6 +33,8 @@ fun main(args:Array<String>) {
     for((index, element) in numbers.withIndex()) {
         println("$element at $index")
     }
+//    var range = 'a'..'z'
+
 //    val q:Question = Question()
 //
 //    q.Answer = null
