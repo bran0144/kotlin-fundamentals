@@ -1,11 +1,16 @@
 package com.rsk
 
-class Person (var Name: String) {
-    fun display() {
-        println("Display: $Name")
+abstract class Person {
+    var firstName:String = ""
+    var lastName:String = ""
+
+    open fun getName() : String = "$firstName $lastName"
+    abstract fun getAddress(): String
     }
 
-    fun displayWithLambda(func: (s:String) -> Unit) {
-        func(Name)
+class Student: Person() {
+    override fun getAddress(): String {
+        return ""
     }
+    override fun getName() : String{return ""}
 }
