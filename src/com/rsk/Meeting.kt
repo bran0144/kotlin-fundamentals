@@ -1,30 +1,9 @@
 package com.rsk
 
-import java.util.*
-
-class Meeting {
-    var Title: String = ""
-    var When: Date = Date()
-    var Who = mutableListOf<String>()
-
-    fun create(){}
+class Meeting(val id: Int, val title: String) {
+    val people = listOf(Person1("Sam"), Person1("Alex"))
 }
 
-fun main(args: Array<String>) {
-    val m = Meeting()
-    m.Title = "Board meeting"
-    m.When = Date(2018, 1,1)
-    m.Who.add("Katie")
+data class Person1(val name: String) {
 
-    with(m) {
-        Title = "Board Meeting"
-        When = Date(2018, 1, 1)
-        Who.add("Katie")
-    }
-
-    m.apply{
-        Title = "Board Meeting"
-        When = Date(2018, 1, 1)
-        Who.add("Katie")
-    }.create()
 }
