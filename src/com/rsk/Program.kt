@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 //            println(value)
 //        }
 //    })
-    program.fibonacci(8, {n -> println(n)})
+    program.fibonacci(8, ::println)
 }
 interface Process{
     fun execute(value: Int)
