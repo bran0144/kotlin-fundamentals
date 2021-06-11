@@ -2,13 +2,15 @@ package com.rsk
 
 fun main(args: Array<String>) {
     var program = Program()
+    var total = 0
  //   program.fibonacci(8)
 //    program.fibonacci(8, object : Process {
 //        override fun execute(value: Int) {
 //            println(value)
 //        }
 //    })
-    program.fibonacci(8, ::println)
+    program.fibonacci(8, {it -> total += it})
+    println(total)
 }
 interface Process{
     fun execute(value: Int)
