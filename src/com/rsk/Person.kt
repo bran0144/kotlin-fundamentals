@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     Student.createUndergraduate("Kelly")
 }
 
-class Program {
+class Program1 {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
