@@ -6,4 +6,9 @@ fun main(args: Array<String>) {
     val smallInts = ints.filter{ it < 4 }
 
     for (i: Int in smallInts) println(i)
+
+    val squaredInts = ints.map{ it*it }
+
+    for (i: Int in squaredInts) println(i)
+
 }
