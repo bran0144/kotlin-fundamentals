@@ -55,9 +55,7 @@ open class Student(firstName:String, lastName:String, _id: Int, var tutor:String
     }
 }
 class Undergraduate(firstName: String) : Student(firstName, "", 1) {
-    override fun toXml(item: Student) {
 
-    }
 }
 class Graduate(firstName: String) : Student(firstName, "", 1) {
 }

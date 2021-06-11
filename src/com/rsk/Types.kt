@@ -5,7 +5,7 @@ interface Time {
     fun setTime(time: KatieTime) = setTime(time.hours)
 }
 interface EndOfTheWorld {
-    fun setTime(time: KatieTime)
+    fun setTime(time: KatieTime) {}
 }
 class KatieTime {
     var hours: Int = 0
