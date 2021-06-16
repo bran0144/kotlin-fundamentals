@@ -1,5 +1,8 @@
 package com.rsk.kotlin
 
+import org.graalvm.compiler.nodes.memory.address.AddressNode
+import sun.jvm.hotspot.debugger.Address
+
 fun main(args: Array<String>) {
     var m:Meeting? = null
     var newMeeting = Meeting()
@@ -22,6 +25,7 @@ fun closeMeeting(m: Meeting?): Boolean? {
 }
 class Meeting {
     val canClose: Boolean = false
+    lateinit var address: Address
 
     fun close(): Boolean {
         return true
@@ -29,6 +33,9 @@ class Meeting {
     fun save(o: Any){
         val saveable = o as? ISaveable
         saveable?.save()
+    }
+    fun init(addr : Address) {
+        address = addr
     }
 }
 
