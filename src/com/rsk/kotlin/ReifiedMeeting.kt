@@ -31,6 +31,9 @@ inline fun <reified  T : ReifiedMeeting> buildMeeting(noinline action: (T) -> Un
 
 }
 open class ReifiedMeeting {
+    fun attend() {
+        TODO("Not yet implemented")
+    }
 
 }
 
