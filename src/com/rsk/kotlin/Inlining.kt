@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     println(i)
 }
 
-fun <T> first(items: List<T>, predicate: (T) -> Boolean) : T {
+inline fun <T> first(items: List<T>, predicate: (T) -> Boolean) : T {
     for (item in items) {
         if(predicate(item)) return item
     }
