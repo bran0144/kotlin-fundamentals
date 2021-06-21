@@ -1,5 +1,9 @@
 package com.rsk.kotlin
 
+import com.rsk.java.NewMeeting
+import com.rsk.java.NewOrganizer
+import java.lang.UnsupportedOperationException
+
 fun main(args: Array<String>) {
     var people : MutableList<Person?>? = null
 
@@ -11,6 +15,9 @@ fun main(args: Array<String>) {
         println(person.age)
     }
 }
-class Person(val age: Int) {
+class Person(val age: Int) : NewOrganizer{
+    override fun processMeetings(meetings: MutableList<NewMeeting>) {
+        throw UnsupportedOperationException("Not implemented")
+    }
 
 }
